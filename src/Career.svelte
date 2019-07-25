@@ -1,3 +1,17 @@
+<script>
+    const nectarBeginDate = new Date('2018/12/10');
+    const today = new Date();
+
+    const monthDiff = (d1, d2) => {
+        if (d1.getTime() > d2.getTime()) {
+            return 1 + (12 * d1.getFullYear() + d1.getMonth()) - (12 * d2.getFullYear() + d2.getMonth());
+        }
+        return 1 + (12 * d2.getFullYear() + d2.getMonth()) - (12 * d1.getFullYear() + d1.getMonth());
+    }
+
+    const nectarInMonths = monthDiff(nectarBeginDate, today);
+</script>
+
 <div class="section-summary">
     <h3 class="subtitle">
         CAREER HISTORY
@@ -6,16 +20,17 @@
     <div>
         <strong>Full Stack Developer at Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Goiás</div>
-        <div>Dec 2018 – Present • 8 mos</div>
+        <div>Dec 2018 – Present • { nectarInMonths } mos</div>
 
         <ul class="topic decimal">
-            <li>Insert content. Highlight responsibilities and key achievements/deliverables.</li>
-            <li>Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-            <li>Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+            <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
+            <li>Develop the main application and work on bugfixes</li>
+            <li>Shape the CRM app with the new UX/UI designed set</li>
+            <li>Assure no broken functionalities or layout into new releases</li>
+            <li>Improve the Backoffice app of the company</li>
         </ul>
         <p>
+            made with React and Java Springboot Framework
             During this time I was responsible for X,Y,Z. In order to accomplish this I had to make use of the coding languages A,B,C. I mainly focused on my skills with B, However during this job the combining of my skill and knowledge of these languages lead to to creating a better product. My most interesting project I've done at [company] is to create a [bla bla] that works with [bla bla]. I made sure to communicate frequently which helped decrease risk and allowed us to respond quickly to any unforseen errors.
         </p>
     </div>

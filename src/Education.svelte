@@ -4,40 +4,34 @@
     </h3>
 
     <div class="pb">
-        <row>
+        <row class="pb">
             <flex1>
-                2016 - 2020
+                2015 - 2018
             </flex1>
             <flex3>
-                <div>Trinity College</div>
-                <div><strong>Trinity College</strong></div>
+                <div>Universidade Federal de Goias</div>
+                <div><strong>Bachelor of Computer Information Systems</strong></div>
+            </flex3>
+        </row>
+        <row>
+            <flex1></flex1>
+            <flex3>
+                <i>Having also studied Computer Science since 2009, which included Formal Languages and Automata Theory, Compilers, Operating Systems, Algorithms and its Complexity.</i>
             </flex3>
         </row>
     </div>
 
-    <div class="pb">
+    <!-- <div class="pb">
         <row>
             <flex1>
-                2016 - 2020
+                2009 - 2014
             </flex1>
             <flex3>
-                <div>Universidade de Sao Paulo, Sao Paulo, Brazil</div>
-                <div><strong>Diploma in Photography</strong></div>
+                <div>Universidade Federal de Goias</div>
+                <div><strong>60% of Bachelor of Computer Science</strong></div>
             </flex3>
         </row>
-    </div>
-
-    <div class="pb">
-        <row>
-            <flex1>
-                1998
-            </flex1>
-            <flex3>
-                <div>College</div>
-                <div><strong>Leaving Certificate</strong></div>
-            </flex3>
-        </row>
-    </div>
+    </div> -->
 </div>
 
 
