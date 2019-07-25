@@ -5,7 +5,6 @@
 	export let phone;
 	export let linkedin;
 
-	import Personal from './Personal.svelte';
 	import Summary from './Summary.svelte';
 	import Achievements from './Achievements.svelte';
 	import Career from './Career.svelte';
