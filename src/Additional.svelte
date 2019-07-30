@@ -3,10 +3,16 @@
         ADDITIONAL INFORMATION
     </h3>
 
-    <ul class="topic alpha">
-        <li><strong>Tools and technology:</strong> MS Office, Photoshop, SAP</li>
-        <li><strong>Languages:</strong> French (Fluent) and German (Basic).</li>
-    </ul>
+	<red>
+		<ul class="topic circle">
+			<li><strong>Tools and technology:</strong> MS Office, Photoshop, SAP</li>
+			<li><strong>Languages:</strong> French (Fluent) and German (Basic).</li>
+			<li><strong>Udemy Courses:</strong> Could be here or listed in Education.</li>
+			<li>React Native (30h).</li>
+			<li>MERN Stack (35h).</li>
+			<li>Advanced Angular (7h).</li>
+		</ul>
+	</red>
 </div>
 
 <style>
@@ -14,8 +20,9 @@
 		text-transform: uppercase;
 		text-decoration: underline;
 	}
-	ul.alpha > li {
-		list-style-type: lower-alpha;
+	ul.circle > li {
+		list-style-type: circle;
 	}
 	li {word-wrap: break-word;}
+	red { color: red }
 </style>
