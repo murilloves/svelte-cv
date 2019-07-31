@@ -4,7 +4,7 @@
     </h3>
     <ul class="topic decimal">
         <!-- <li>Include 4/5 key achievements or highlights. Should be relevant and quantifiable.</li> -->
-        <li>Led a team of 4 Front End developers and increased the amount of tasks delivered by the team by 25% per Sprint</li><!-- Using WBS (Work Breakdown Structure) and Scrum Poker-->
+        <li>Led a team of 4 Frontend developers and increased the amount of tasks delivered by the team by 25% per Sprint</li><!-- Using WBS (Work Breakdown Structure) and Scrum Poker-->
         <li>Incremented the developers productivity by 10% by creating automated tools and writing detailed documentation</li><!-- Automated: CI/CD; Build modules -->
         <li>Identified performance issue an cut down the screen render delay by four times, also reducing overfetch</li><!-- Actuar Screen -->
         <li>Given talks to a large community. Also helped 5 other people from coding basics to mid-level</li>
@@ -17,6 +17,7 @@
 	.subtitle {
 		text-transform: uppercase;
 		text-decoration: underline;
+		font-weight: 600;
 	}
 	ul.decimal > li {
 		list-style-type: decimal;

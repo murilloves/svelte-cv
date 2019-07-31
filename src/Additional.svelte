@@ -11,6 +11,11 @@
 			<li>React Native (30h).</li>
 			<li>MERN Stack (35h).</li>
 			<li>Advanced Angular (7h).</li>
+			<li> React Native with NodeJS and Firebase</li>
+			<li> MERN Stack, Front to Back</li>
+			<li> Agile management with scrum</li>
+			<li> Web Design for Web Developers: UI / UX for Websites</li>
+			<li> Javascript Completo 2018 - Fundamentals to Master</li>
 		</ul>
 	</red>
 </div>
@@ -19,6 +24,7 @@
 	.subtitle {
 		text-transform: uppercase;
 		text-decoration: underline;
+		font-weight: 600;
 	}
 	ul.circle > li {
 		list-style-type: circle;

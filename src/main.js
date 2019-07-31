@@ -4,8 +4,8 @@ import Personal from './Personal.svelte';
 const personal = new Personal({
 	target: document.body,
 	props: {
-		name: 'Murillo Silva',
-		address: '09 H-040 Street - Vera Cruz - Aparecida de Goiania',
+		name: 'Silva, Murillo',
+		address: 'H-40 Street - Vera Cruz - Aparecida de Goiania',
 		email: 'murillov.dev@gmail.com',
 		phone: '+55 62 983-196-600',
 		linkedin: {

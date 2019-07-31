@@ -2,6 +2,7 @@
   .subtitle {
     text-transform: uppercase;
     text-decoration: underline;
+		font-weight: 600;
   }
   .paragraph {
     text-align: justify;

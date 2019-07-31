@@ -39,6 +39,7 @@
 	.subtitle {
 		text-transform: uppercase;
 		text-decoration: underline;
+		font-weight: 600;
 	}
 
 	row { display: flex }
