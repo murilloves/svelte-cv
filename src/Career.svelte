@@ -123,7 +123,7 @@
 		font-size: 12px;
 		font-style: italic;
 	}
-	ul.circle > li {
+	/* ul.circle > li {
 		list-style-type: circle;
 	}
 	ul.decimal > li {
@@ -134,7 +134,7 @@
 	}
 	ul.upper-roman > li {
 		list-style-type: upper-roman;
-	}
+	} */
 	li {word-wrap: break-word;}
     red {color:red}
 </style>

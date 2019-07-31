@@ -25,7 +25,8 @@
 
 <style>
 	.div-container {
-		margin: 1.5cm;
+		margin-right: 1.5cm;
+		margin-bottom: 1.5cm;
 		margin-left: 2.5cm;
         text-align: right;
 	}
