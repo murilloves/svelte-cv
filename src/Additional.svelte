@@ -16,6 +16,7 @@
 			<li> Agile management with scrum</li>
 			<li> Web Design for Web Developers: UI / UX for Websites</li>
 			<li> Javascript Completo 2018 - Fundamentals to Master</li>
+			<li>Burger lover and charismatic Pianist</li>
 		</ul>
 	</red>
 </div>
