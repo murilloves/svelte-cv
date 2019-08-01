@@ -28,7 +28,7 @@
 		margin-right: 1.5cm;
 		margin-bottom: 1.5cm;
 		margin-top: -1cm;
-		margin-left: 2.5cm;
+		margin-left: 1.5cm;
         text-align: right;
 	}
 

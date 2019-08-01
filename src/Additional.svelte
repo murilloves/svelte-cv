@@ -19,9 +19,9 @@
 		'Springboot',
 		'Ansi C',
 		'UI / UX',
+		'Sass',
 		'Clean Code',
 		'Lazy Loading',
-		'Sass, Less, Stylus',
 	]
 </script>
 
@@ -78,7 +78,7 @@
 		line-height: 32px;
 	}
 	.joke {
-		margin: 10px 30px;
+		margin: 0 30px 10px 30px;
 		font-size: 14px;
 		color: #777;
 	}

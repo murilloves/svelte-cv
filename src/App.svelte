@@ -20,7 +20,7 @@
 	.div-container {
 		margin: 1.5cm;
 		margin-top: -0.8cm;
-		margin-left: 2.5cm;
+		margin-left: 1.5cm;
 	}
 </style>
 
@@ -40,9 +40,20 @@
 	<Interests />
 
 	<div>
-		<strong style="font-style: italic">
+		<!-- <strong style="font-style: italic; color: #777">
 			References available upon request
-		</strong>
+		</strong> -->
+		<div style="
+			text-align: center;
+			margin-top: 30px;
+			font-weight: 600;">
+			You can check out more at my personal website:
+		</div>
+		<div style="
+			text-align: center;
+			margin-top: 5px;">
+			<a href="https://murilloves.github.io/dev/">https://murilloves.github.io/dev/</a>
+		</div>
 	</div>
 
 </div>
