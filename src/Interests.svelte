@@ -4,10 +4,10 @@
     </h3>
 
     <ul class="topic">
-        <red>
+        <!-- <red>
             <li>Outline interests and activities. Highlight interests that may add value to your application.</li>
             <li>Love to backpack travel, etc</li>
-        </red>
+        </red> -->
         <li>Use data science to expand the business</li>
         <li>Grow as a developer and bring life to great ideas</li>
         <li>Help people to use programming concepts and invent more</li>
@@ -22,6 +22,6 @@
 	}
 
     li {word-wrap: break-word;}
-    
+
     red {color:red}
 </style>

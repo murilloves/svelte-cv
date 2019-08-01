@@ -3,7 +3,7 @@
 		{ name: 'React Native with NodeJS and Firebase', hours: 28 },
 		{ name: 'MERN Stack, Frontend to Backend', hours: 12 },
 		{ name: 'Agile management with SCRUM', hours: 10 },
-		{ name: 'Javascript Completo 2018 - Fundamentals to Master', hours: 35 },
+		{ name: 'Complete Javascript 2018 - Fundamentals to Master', hours: 35 },
 		{ name: 'Web Design for Web Developers: UI/UX for Websites and Mobile', hours: 8 }
 	]
 </script>
