@@ -123,5 +123,4 @@
     } */
     .pt { padding-top: 2rem }
 	li {word-wrap: break-word;}
-    red {color:red}
 </style>

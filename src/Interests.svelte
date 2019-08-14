@@ -22,6 +22,4 @@
 	}
 
     li {word-wrap: break-word;}
-
-    red {color:red}
 </style>
