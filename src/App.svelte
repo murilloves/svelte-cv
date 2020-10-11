@@ -45,7 +45,7 @@
 		</strong> -->
 		<div style="
 			text-align: center;
-			margin-top: 30px;
+			margin-top: 24px;
 			font-weight: 600;">
 			You can check out more at my personal website:
 		</div>

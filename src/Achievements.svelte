@@ -1,6 +1,6 @@
 <div class="section-summary">
     <h3 class="subtitle">
-        CAREER ACHIEVEMENTS
+        ACHIEVEMENTS
     </h3>
     <ul class="topic decimal">
         <!-- <li>Include 4/5 key achievements or highlights. Should be relevant and quantifiable.</li> -->

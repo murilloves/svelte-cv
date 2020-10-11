@@ -20,7 +20,7 @@
     <div class="pb ml-40">
         <row class="pb">
             <flex1>
-                2015 - 2018
+                2014 - 2018
             </flex1>
             <flex3>
                 <div>Universidade Federal de Goias</div>

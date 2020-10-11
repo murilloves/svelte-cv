@@ -19,7 +19,7 @@
 		'Springboot',
 		'Ansi C',
 		'UI / UX',
-		'Sass',
+		'CSS3', 'Sass',
 		'Clean Code',
 		'Lazy Loading',
 	];
