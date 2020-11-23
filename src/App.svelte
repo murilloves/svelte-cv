@@ -35,7 +35,7 @@
 
 	<Education />
 
-	<Additional />
+	<!-- <Additional /> -->
 	
 	<Interests />
 
