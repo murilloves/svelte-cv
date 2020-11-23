@@ -1,7 +1,8 @@
 <script>
     const clubienBeginDate = new Date('2020/07/15');
     const nectarBeginDate = new Date('2018/11/10');
-    const nussaBeginDate = new Date('2015/6/15');
+    const nussaBeginDate = new Date('2015/3/15');
+    const nussaEndDate = new Date('2017/6/10');
     const today = new Date();
 
     const monthDiff = (d1, d2) => {
@@ -17,7 +18,7 @@
 
     const clubienInMonths = monthDiff(clubienBeginDate, today);
     const nectarInMonths = monthDiff(nectarBeginDate, today);
-    const nussaInMonths = monthDiff(nussaBeginDate, nectarBeginDate);
+    const nussaInMonths = monthDiff(nussaBeginDate, nussaEndDate);
 </script>
 
 <div class="section-summary">
@@ -26,7 +27,7 @@
     </h3>
 
     <div>
-        <strong>Frontend Developer at Nectar CRM</strong>
+        <strong class="company-name">Frontend Developer at Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Brazilian's midwest</div>
         <div>Nov 2018 – Present •
         { nectarInMonths / 12 >= 1
@@ -51,9 +52,13 @@
             <li>Development of Nectar CRM's main web app and bug solving issues</li>
             <li>Improvements on company's Backoffice app</li>
         </ul>
+
+        <p>Tech Stack:</p>
+        <p>AngularJS, Karma, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.</p>
+
     </div>
     <div class="pt-1">
-        <strong>Mobile Application Developer and Web Developer at Clubien</strong>
+        <strong class="company-name">Mobile Application Developer and Web Developer at Clubien</strong>
         <div class="tiny-desc">Wellness Delivery startup in Ireland</div>
         <div>Jul 2020 – Present •
         { clubienInMonths / 12 >= 1
@@ -78,9 +83,12 @@
             <li>Improvements at Clubien's website and creation of the landing pages for customers and professionals</li>
             <li>Co-development of Admin's interface, Rest integration with company API</li>
         </ul>
+
+        <p>Tech Stack:</p>
+        <p>React Native, NextJS, React, Redux, Jest, Rest, Git.</p>
     </div>
     <div class="pt-1">
-        <strong>Frontend Developer at Actuar</strong>
+        <strong class="company-name">Frontend Developer at Actuar</strong>
         <div class="tiny-desc">Leading provider of academic software in Brazil</div>
         <div>Jul 2017 – Nov 2018 • 1 yr 5 mos</div>
 
@@ -95,39 +103,54 @@
             <li>Create webcomponent for scheduling software implantation and support inspection visits</li>
             <li>Give maintenance on a training app. Made responsive blogs and webpages for the company, also performing SEO</li>
         </ul>
+
+        <p>Tech Stack:</p>
+        <p>Angular 2+, Ionic 2, Typescript, Jest, Angular JS, Wordpress, Scrum, HTML5, ES6, CSS3, Sass, SVG, Git.</p>
     </div>
     <div class="pt-1">
-        <strong>Fullstack Developer at Nussa Sistemas (Contractor)</strong>
+        <strong class="company-name">Fullstack Developer at Nussa Sistemas (Contractor)</strong>
         <div>
-            Jun { nussaBeginDate.getFullYear() }
-            – Feb { 1 + nectarBeginDate.getFullYear() } • { Math.floor(nussaInMonths / 12) } yrs, { 2 + nussaInMonths % 12 } mos
+            Mar { nussaBeginDate.getFullYear() }
+            – Jun { nussaEndDate.getFullYear() } • { Math.floor(nussaInMonths / 12) } yrs, { nussaInMonths % 12 } mos
         </div>
-
+        
+        <p>Description:</p>
         <ul class="topic">
             <li>Freelancer web developer, mobile apps, PWAs and websites</li>
-            <li>Tech Stacks: Ionic 2+, MEAN, MERN, PHP (Wordpress), Firebase</li>
-            <li>Experience in data consumption optimization</li>
+            <li>Experience in data consumption and optimization</li>
+            <li>Fullstack developer, responsible for handling entire Webapps from Backend to Frontend</li>
+            <li>Webapps Deployment and its CI/CD</li>
         </ul>
 
         <p class="italic">
             Some projects I worked for Nussa Sistemas were:
-            mobile app for package delivery, PWA for medical congresses, daily liturgy webapp for Archdioceses and a Social Network including real time chat.
+            mobile app for package delivery,
+            PWA for medical congresses, daily liturgy webapp for Archdioceses and a Social Network including real time chat.
         </p>
+        
+        <p>Tech Stack:</p>
+        <p>Angular 2+, Ionic 2+, React JS, React Native, Node JS + Express, Mongo DB, Firebase, CI/CD, Heroku, PHP and Wordpress.</p>
     </div>
 
     <div class="pt-1">
-        <strong>Internship Software Developer at Meta</strong>
+        <strong class="company-name">Internship Software Developer at Meta</strong>
         <div>Feb 2017 – Jul 2017 • 6 mos</div>
 
         <p class="italic">
             MetaTecnologia is a company with large experience in computerizing mobile phone shops.
             There I worked on the improvement of a product to control financial of mobile phone stores, and payment system integration to federal government.
-            I was a Fullstack developer, I studied and handled JAVA and MongoDB on backend and JSP, HTML, Bootstrap and CSS for frontend.
+            I was a Fullstack developer, I studied and handled a Fullstack setup.
         </p>
+
+        <p>Tech Stack:</p>
+        <p> JAVA, MongoDB, JSP, HTML and CSS with Bootstrap.</p>
     </div>
 </div>
 
 <style>
+    .company-name {
+        font-size: 1.2rem;
+    }
 	.subtitle {
 		text-transform: uppercase;
 		text-decoration: underline;
