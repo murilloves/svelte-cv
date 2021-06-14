@@ -51,7 +51,7 @@
         <p class="italic">
             &emsp; In my position as a Developer at SevenApps, I've worked on three projects so far.
             The most significant company is FanHero. There I'm helping with their newest version for the
-            webapp for clients, which will need to handle millions of simultaneous connections, then
+            webapp for clients, which will need to handle millions of simultaneous connections, hence
             I'm working on solutions for problems like requests, performance, security among other issues.
         </p>
 
