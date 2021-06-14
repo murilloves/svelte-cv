@@ -1,6 +1,9 @@
 <script>
+    const sevenappsBeginDate = new Date('2020/12/28');
     const clubienBeginDate = new Date('2020/07/15');
+    const clubienEndDate = new Date('2020/12/10');
     const nectarBeginDate = new Date('2018/11/10');
+    const nectarEndDate = new Date('2020/12/31');
     const nussaBeginDate = new Date('2015/3/15');
     const nussaEndDate = new Date('2017/6/10');
     const today = new Date();
@@ -16,8 +19,9 @@
             - (12 * d1.getFullYear() + d1.getMonth());
     }
 
-    const clubienInMonths = monthDiff(clubienBeginDate, today);
-    const nectarInMonths = monthDiff(nectarBeginDate, today);
+    const sevenappsInMonths = monthDiff(sevenappsBeginDate, today);
+    const clubienInMonths = monthDiff(clubienBeginDate, clubienEndDate);
+    const nectarInMonths = monthDiff(nectarBeginDate, nectarEndDate);
     const nussaInMonths = monthDiff(nussaBeginDate, nussaEndDate);
 </script>
 
@@ -27,12 +31,53 @@
     </h3>
 
     <div>
+        <strong class="company-name">Senior Frontend Developer at SevenApps LLC</strong>
+        <div class="tiny-desc">Developer Squad Supply Specialist</div>
+        <div>Dec 2020 – Present •
+        { sevenappsInMonths / 12 >= 1
+            ? `${Math.floor(sevenappsInMonths/12)}
+                yrs${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
+            : `${sevenappsInMonths % 12} mos` }
+        </div>
+
+        <p class="italic">
+            &emsp; SevenApps is a company based on the US and Brazil that allocates top notch developers to corporations that are
+            willing to create their own webapp or mobile app using the best technologies available. Furthermore,
+            developers are also responsible for understanding the corporation's goals and providing the best service,
+            based on their core business with a high quality control of software.
+        </p>
+
+        <p>Role:</p>
+        <p class="italic">
+            &emsp; In my position as a Developer at SevenApps, I've worked on three projects so far.
+            The most significant company is FanHero. There I'm helping with their newest version for the
+            webapp for clients, which will need to handle millions of simultaneous connections, then
+            I'm working on solutions for problems like requests, performance, security among other issues.
+        </p>
+
+        <p>Projects:</p>
+        <ul class="topic">
+            <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
+            <li>FanHero: Portal</li>
+            <li>FanHero: Webapp</li>
+            <li>Mindlab: MindZup - Gamificated application for children and teens</li>
+            <li>BestBarbers: Barber Management Webapp</li>
+        </ul>
+
+        <p>Tech Stack & Concepts:</p>
+        <p>
+            Git, ReactJS, NextJS, React Native, ES7, Redux, React Hooks, Context API, Atomic Design, Styled Components, Chakra UI,
+            Rest, GraphQL, Gulp, Webpack, Babel, Docker, Google Cloud.
+        </p>
+
+    </div>
+    <div>
         <strong class="company-name">Frontend Developer at Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Brazilian's midwest</div>
-        <div>Nov 2018 – Present •
+        <div>Nov 2018 – Dec 2020 •
         { nectarInMonths / 12 >= 1
-            ? `${Math.floor(nectarInMonths/12)} yrs
-               ${nectarInMonths % 12 !== 0 ? ', ' + nectarInMonths % 12 + ' mos' : ''}`
+            ? `${Math.floor(nectarInMonths/12)}
+                yrs${nectarInMonths % 12 !== 0 ? ', ' + nectarInMonths % 12 + ' mos' : ''}`
             : `${nectarInMonths % 12} mos` }
         </div>
 
@@ -58,9 +103,9 @@
 
     </div>
     <div class="pt-1">
-        <strong class="company-name">Mobile Application Developer and Web Developer at Clubien</strong>
+        <strong class="company-name">Mobile Developer and Web Developer at Clubien (Contractor)</strong>
         <div class="tiny-desc">Wellness Delivery startup in Ireland</div>
-        <div>Jul 2020 – Present •
+        <div>Jul 2020 – Dec 2020 •
         { clubienInMonths / 12 >= 1
             ? `${Math.floor(clubienInMonths/12)} yrs
                ${clubienInMonths % 12 !== 0 ? ', ' + clubienInMonths % 12 + ' mos' : ''}`
@@ -85,7 +130,7 @@
         </ul>
 
         <p>Tech Stack:</p>
-        <p>React Native, NextJS, React, Redux, Jest, Rest, Git.</p>
+        <p>React Native, NextJS, React, Redux, Jest, Rest, Git, Tailwind CSS.</p>
     </div>
     <div class="pt-1">
         <strong class="company-name">Frontend Developer at Actuar</strong>
@@ -107,8 +152,22 @@
         <p>Tech Stack:</p>
         <p>Angular 2+, Ionic 2, Typescript, Jest, Angular JS, Wordpress, Scrum, HTML5, ES6, CSS3, Sass, SVG, Git.</p>
     </div>
+
     <div class="pt-1">
-        <strong class="company-name">Fullstack Developer at Nussa Sistemas (Contractor)</strong>
+        <strong class="company-name">Internship Software Developer at Meta</strong>
+        <div>Feb 2017 – Jul 2017 • 6 mos</div>
+
+        <p class="italic">
+            MetaTecnologia is a company with large experience in computerizing mobile phone shops.
+            There I worked on the improvement of a product to control financial of mobile phone stores, and payment system integration to federal government.
+            I was a Fullstack developer, I studied and handled a Fullstack setup.
+        </p>
+
+        <p>Tech Stack:</p>
+        <p> JAVA, MongoDB, JSP, HTML and CSS with Bootstrap.</p>
+    </div>
+    <div class="pt-1">
+        <strong class="company-name">Developer at Nussa Sistemas (Contractor)</strong>
         <div>
             Mar { nussaBeginDate.getFullYear() }
             – Jun { nussaEndDate.getFullYear() } • { Math.floor(nussaInMonths / 12) } yrs, { nussaInMonths % 12 } mos
@@ -130,20 +189,6 @@
         
         <p>Tech Stack:</p>
         <p>Angular 2+, Ionic 2+, React JS, React Native, Node JS + Express, Mongo DB, Firebase, CI/CD, Heroku, PHP and Wordpress.</p>
-    </div>
-
-    <div class="pt-1">
-        <strong class="company-name">Internship Software Developer at Meta</strong>
-        <div>Feb 2017 – Jul 2017 • 6 mos</div>
-
-        <p class="italic">
-            MetaTecnologia is a company with large experience in computerizing mobile phone shops.
-            There I worked on the improvement of a product to control financial of mobile phone stores, and payment system integration to federal government.
-            I was a Fullstack developer, I studied and handled a Fullstack setup.
-        </p>
-
-        <p>Tech Stack:</p>
-        <p> JAVA, MongoDB, JSP, HTML and CSS with Bootstrap.</p>
     </div>
 </div>
 
