@@ -220,7 +220,6 @@
 	ul.upper-roman > li {
 		list-style-type: upper-roman;
     } */
-    .pt { padding-top: 2rem }
     .pt-1 { padding-top: 1rem }
 	li {word-wrap: break-word;}
 </style>
