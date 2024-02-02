@@ -12,7 +12,7 @@
 	import Additional from './Additional.svelte';
 	import Interests from './Interests.svelte';
 
-	// import common from './styles/common.svelte';
+	import common from './styles/common.svelte';
 
 </script>
 

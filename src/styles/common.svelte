@@ -12,13 +12,16 @@
 		font-size: 12px;
 		font-style: italic;
 	}
-	row { display: flex }
-	flex1 { flex: 1 }
-	flex2 { flex: 2 }
-	flex3 { flex: 3 }
-	flex4 { flex: 4 }
+	.row { display: flex }
+	.flex1 { flex: 1 }
+	.flex2 { flex: 2 }
+	.flex3 { flex: 3 }
+	.flex4 { flex: 4 }
 
 	.pb { padding-bottom: 1rem }
+	.mt-1 { margin-top: 0.5rem }
+	.mt-2 { margin-top: 1rem }
+	.mt-3 { margin-top: 1.5rem }
 
 	ul.circle > li {
 		list-style-type: circle;

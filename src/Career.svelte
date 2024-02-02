@@ -1,11 +1,14 @@
 <script>
-    const sevenappsBeginDate = new Date('2020/12/28');
-    const clubienBeginDate = new Date('2020/07/15');
+    const reveloStartDate = new Date('2022/01/10');
+
+    const sevenappsStartDate = new Date('2020/12/28');
+    const sevenappsEndDate = new Date('2022/01/05');
+    const clubienStartDate = new Date('2020/07/15');
     const clubienEndDate = new Date('2020/12/10');
-    const nectarBeginDate = new Date('2018/11/10');
+    const nectarStartDate = new Date('2018/11/10');
     const nectarEndDate = new Date('2020/12/31');
-    const nussaBeginDate = new Date('2015/3/15');
-    const nussaEndDate = new Date('2017/6/10');
+    // const nussaStartDate = new Date('2015/3/15');
+    // const nussaEndDate = new Date('2017/6/10');
     const today = new Date();
 
     const monthDiff = (d1, d2) => {
@@ -19,10 +22,11 @@
             - (12 * d1.getFullYear() + d1.getMonth());
     }
 
-    const sevenappsInMonths = monthDiff(sevenappsBeginDate, today);
-    const clubienInMonths = monthDiff(clubienBeginDate, clubienEndDate);
-    const nectarInMonths = monthDiff(nectarBeginDate, nectarEndDate);
-    const nussaInMonths = monthDiff(nussaBeginDate, nussaEndDate);
+    const reveloInMonths = monthDiff(reveloStartDate, today);
+    const sevenappsInMonths = monthDiff(sevenappsStartDate, sevenappsEndDate);
+    const clubienInMonths = monthDiff(clubienStartDate, clubienEndDate);
+    const nectarInMonths = monthDiff(nectarStartDate, nectarEndDate);
+    // const nussaInMonths = monthDiff(nussaStartDate, nussaEndDate);
 </script>
 
 <div class="section-summary">
@@ -31,17 +35,17 @@
     </h3>
 
     <div>
-        <strong class="company-name">Senior Frontend Developer at SevenApps LLC</strong>
+        <strong class="company-name">Frontend Engineer at Revelo</strong>
         <div class="tiny-desc">Developer Squad Supply Specialist</div>
-        <div>Dec 2020 – Present •
-        { sevenappsInMonths / 12 >= 1
-            ? `${Math.floor(sevenappsInMonths/12)}
-                yrs${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
-            : `${sevenappsInMonths % 12} mos` }
+        <div>Jan 2022 – Present •
+        { reveloInMonths / 12 >= 1
+            ? `${Math.floor(reveloInMonths/12)}
+                yrs${reveloInMonths % 12 !== 0 ? ', ' + reveloInMonths % 12 + ' mos' : ''}`
+            : `${reveloInMonths % 12} mos` }
         </div>
 
         <p class="italic">
-            &emsp; SevenApps is a company based on the US and Brazil that allocates top notch developers to corporations that are
+            &emsp; Revelo is a company based on the US and Brazil that allocates top notch developers to corporations that are
             willing to create their own webapp or mobile app using the best technologies available. Furthermore,
             developers are also responsible for understanding the corporation's goals and providing the best service,
             based on their core business with a high quality control of software.
@@ -49,20 +53,60 @@
 
         <p>Role:</p>
         <p class="italic">
-            &emsp; In my position as a Developer at SevenApps, I've worked on three projects so far.
-            The most significant company is FanHero. There I'm helping with their newest version for the
-            webapp for clients, which will need to handle millions of simultaneous connections, hence
-            I'm working on solutions for problems like requests, performance, security among other issues.
+            &emsp; In my position as a Developer at Revelo, I've been a contractor for a single project thus far.
+            There I work for Nerdwallet, a company whose goal is to provide information that educates users in
+            making financial decisions. My assignments are:
         </p>
 
-        <p>Projects:</p>
         <ul class="topic">
             <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
-            <li>FanHero: Portal</li>
-            <li>FanHero: Webapp</li>
-            <li>Mindlab: MindZup - Gamificated application for children and teens</li>
-            <li>BestBarbers: Barber Management Webapp</li>
+            <li>
+                Help building out a style guide and core set of React components and templates.
+            </li>
+            <li>
+                Explore technologies such as React and Next JS to support server-side rendering for speed and SEO.
+            </li>
+            <li>
+                Design and build admin interfaces so our business analysts can seamlessly update website content and easily get analytics reports to track performance.
+            </li>
+            <li>
+                Build tests using tools like Jest and Cypress to ensure the components are reliable enough.
+            </li>
+            <li>
+                Update third part packages to it's most modern and seccure versions.
+            </li>
         </ul>
+
+        <p>Tech Stack:</p>
+        <p>
+            Git, ReactJS, Typescript, NextJS, ES7, Redux, React Hooks, Context API, Atomic Design, Styled Components,
+            Chakra UI, Ruby on Rails, GraphQL, Webpack, Vite, HTML5, SCSS, Babel.
+        </p>
+
+    </div>
+    <div class="mt-3">
+        <strong class="company-name">Senior Frontend Developer at SevenApps LLC</strong>
+        <div class="tiny-desc">Developer Squad Supply Specialist</div>
+        <div>Dec 2020 – Jan 2022 •
+        { sevenappsInMonths / 12 >= 1
+            ? `${Math.floor(sevenappsInMonths/12)}
+                yrs${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
+            : `${sevenappsInMonths % 12} mos` }
+        </div>
+
+        <p>Role:</p>
+        <p class="italic">
+            &emsp; As a Developer at SevenApps, I worked on three projects.
+            The most significant company was FanHero. There I helped with their newest version for the
+            webapp for clients, which has the need of handling millions of simultaneous connections, hence
+            thinking about solutions for problems like requests, performance, security among other issues.
+        </p>
+
+        <p>Projects:
+            FanHero Portal, Webapp;
+            Mindlab: MindZup - Gamificated application for students;
+            BestBarbers: Barber Management Webapp
+        </p>
 
         <p>Tech Stack & Concepts:</p>
         <p>
@@ -71,7 +115,7 @@
         </p>
 
     </div>
-    <div>
+    <div class="pt-1">
         <strong class="company-name">Frontend Developer at Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Brazilian's midwest</div>
         <div>Nov 2018 – Dec 2020 •
@@ -102,7 +146,7 @@
         <p>AngularJS, Karma, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.</p>
 
     </div>
-    <div class="pt-1">
+    <!-- <div class="pt-1">
         <strong class="company-name">Mobile Developer and Web Developer at Clubien (Contractor)</strong>
         <div class="tiny-desc">Wellness Delivery startup in Ireland</div>
         <div>Jul 2020 – Dec 2020 •
@@ -113,7 +157,7 @@
         </div>
 
         <p class="italic">
-            Clubien is a Dublin-based startup who helps people Find the best beauty and grooming professionals and book treatments at home.
+            Clubien was a Dublin-based startup who helps people find the best beauty and grooming professionals and book treatments at home.
         </p>
 
         <p>Main Mobile Developer:</p>
@@ -131,21 +175,21 @@
 
         <p>Tech Stack:</p>
         <p>React Native, NextJS, React, Redux, Jest, Rest, Git, Tailwind CSS.</p>
-    </div>
+    </div> -->
     <div class="pt-1">
         <strong class="company-name">Frontend Developer at Actuar</strong>
         <div class="tiny-desc">Leading provider of academic software in Brazil</div>
         <div>Jul 2017 – Nov 2018 • 1 yr 5 mos</div>
 
         <p class="italic">
-            Actuar is a company which focus on proving technology to gyms and web payment. As of August 2018, the company had approximately 2.000 throughout Brazil, more than 15.000 users from physic evaluation free webapp and thousands from TREI.NO app in Brazil and abroad. In 18 months I was able to:
+            Actuar is a company which focus on proving technology to gyms and web payment.
+            <!-- As of August 2018, the company had approximately 2.000 throughout Brazil, more than 15.000 users from physic evaluation free webapp and thousands from TREI.NO app in Brazil and abroad. -->
+            In 18 months I was able to:
         </p>
 
         <ul class="topic">
             <li>Lead a team of developers applying SCRUM and working on the development of an ERP focused on gyms management and crossfit boxes</li>
             <li>Estimate the effort for new demands and performed verification of the artifacts of software engineering such as requirements, design, implementation and testing</li>
-            <li>Develop the math logic for payment methods, discounts and bonus </li>
-            <li>Create webcomponent for scheduling software implantation and support inspection visits</li>
             <li>Give maintenance on a training app. Made responsive blogs and webpages for the company, also performing SEO</li>
         </ul>
 
@@ -157,19 +201,20 @@
         <strong class="company-name">Internship Software Developer at Meta</strong>
         <div>Feb 2017 – Jul 2017 • 6 mos</div>
 
-        <p class="italic">
+        <!-- <p class="italic">
             MetaTecnologia is a company with large experience in computerizing mobile phone shops.
             There I worked on the improvement of a product to control financial of mobile phone stores, and payment system integration to federal government.
             I was a Fullstack developer, I studied and handled a Fullstack setup.
-        </p>
+        </p> -->
 
         <p>Tech Stack:</p>
         <p> JAVA, MongoDB, JSP, HTML and CSS with Bootstrap.</p>
     </div>
-    <div class="pt-1">
+
+    <!-- <div class="pt-1">
         <strong class="company-name">Developer at Nussa Sistemas (Contractor)</strong>
         <div>
-            Mar { nussaBeginDate.getFullYear() }
+            Mar { nussaStartDate.getFullYear() }
             – Jun { nussaEndDate.getFullYear() } • { Math.floor(nussaInMonths / 12) } yrs, { nussaInMonths % 12 } mos
         </div>
         
@@ -189,7 +234,7 @@
         
         <p>Tech Stack:</p>
         <p>Angular 2+, Ionic 2+, React JS, React Native, Node JS + Express, Mongo DB, Firebase, CI/CD, Heroku, PHP and Wordpress.</p>
-    </div>
+    </div> -->
 </div>
 
 <style>
@@ -220,6 +265,11 @@
 	ul.upper-roman > li {
 		list-style-type: upper-roman;
     } */
+
+    .mt-1 { margin-top: 0.5rem }
+	.mt-2 { margin-top: 1rem }
+	.mt-3 { margin-top: 1.5rem }
+
     .pt-1 { padding-top: 1rem }
 	li {word-wrap: break-word;}
 </style>
