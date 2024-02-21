@@ -6,7 +6,10 @@
 	export let linkedin;
 </script>
 
-<div class="div-container">
+<div class="personal-container">
+    <div>
+        
+    </div>
     <h1>
         {name}
     </h1>
@@ -21,15 +24,17 @@
             {linkedin.url}
         </a>
     </div>
+
+    <style>
+        .personal-container {
+            margin-right: 1.5cm;
+            margin-bottom: 1.5cm;
+            margin-top: -1cm;
+            margin-left: 1.5cm;
+            text-align: right;
+        }
+    
+    </style>
+    
 </div>
 
-<style>
-	.div-container {
-		margin-right: 1.5cm;
-		margin-bottom: 1.5cm;
-		margin-top: -1cm;
-		margin-left: 1.5cm;
-        text-align: right;
-	}
-
-</style>

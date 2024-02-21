@@ -1,8 +1,8 @@
 <script>
-    const reveloStartDate = new Date('2022/01/10');
+    const reveloStartDate = new Date('2021/12/20');
 
     const sevenappsStartDate = new Date('2020/12/28');
-    const sevenappsEndDate = new Date('2022/01/05');
+    const sevenappsEndDate = new Date('2021/11/02');
     const clubienStartDate = new Date('2020/07/15');
     const clubienEndDate = new Date('2020/12/10');
     const nectarStartDate = new Date('2018/11/10');
@@ -37,25 +37,28 @@
     <div>
         <strong class="company-name">Frontend Engineer at Revelo</strong>
         <div class="tiny-desc">Developer Squad Supply Specialist</div>
-        <div>Jan 2022 – Present •
+        <div>Dec 2021 – Present •
         { reveloInMonths / 12 >= 1
             ? `${Math.floor(reveloInMonths/12)}
                 yrs${reveloInMonths % 12 !== 0 ? ', ' + reveloInMonths % 12 + ' mos' : ''}`
             : `${reveloInMonths % 12} mos` }
         </div>
 
-        <p class="italic">
-            &emsp; Revelo is a company based on the US and Brazil that allocates top notch developers to corporations that are
-            willing to create their own webapp or mobile app using the best technologies available. Furthermore,
-            developers are also responsible for understanding the corporation's goals and providing the best service,
-            based on their core business with a high quality control of software.
+        <p>
+            &emsp;
+            Revelo is a company based in the US and Brazil that allocates top-notch developers to
+            corporations that are willing to create their own web app or mobile app using the best
+            technologies available. Furthermore, developers are also responsible for understanding the
+            corporation's goals and providing the best service, based on their core business with a high
+            quality control of software.
         </p>
 
         <p>Role:</p>
-        <p class="italic">
-            &emsp; In my position as a Developer at Revelo, I've been a contractor for a single project thus far.
-            There I work for Nerdwallet, a company whose goal is to provide information that educates users in
-            making financial decisions. My assignments are:
+        <p>
+            &emsp;
+            In my position as a Developer at Revelo, I've been a contractor for a single company,
+            a Fintech-related whose goal is to provide information that educates users in making financial decisions.
+            My assignments are:
         </p>
 
         <ul class="topic">
@@ -87,15 +90,15 @@
     <div class="mt-3">
         <strong class="company-name">Senior Frontend Developer at SevenApps LLC</strong>
         <div class="tiny-desc">Developer Squad Supply Specialist</div>
-        <div>Dec 2020 – Jan 2022 •
+        <div>Dec 2020 – Nov 2021 •
         { sevenappsInMonths / 12 >= 1
             ? `${Math.floor(sevenappsInMonths/12)}
-                yrs${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
+                yr${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
             : `${sevenappsInMonths % 12} mos` }
         </div>
 
         <p>Role:</p>
-        <p class="italic">
+        <p>
             &emsp; As a Developer at SevenApps, I worked on three projects.
             The most significant company was FanHero. There I helped with their newest version for the
             webapp for clients, which has the need of handling millions of simultaneous connections, hence
@@ -115,7 +118,7 @@
         </p>
 
     </div>
-    <div class="pt-1">
+    <div class="mt-3">
         <strong class="company-name">Frontend Developer at Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Brazilian's midwest</div>
         <div>Nov 2018 – Dec 2020 •
@@ -125,7 +128,7 @@
             : `${nectarInMonths % 12} mos` }
         </div>
 
-        <p class="italic">
+        <p>
             Nectar is a regional CRM company which provides solutions for companies to manage relationships with their customers, selling procedures, Business Intelligence and a lot more.
             Integrated with Google, RD Station and a huge set of tools and enterprises, it helps companies boosts their sales process and strategy.
         </p>
@@ -156,7 +159,7 @@
             : `${clubienInMonths % 12} mos` }
         </div>
 
-        <p class="italic">
+        <p>
             Clubien was a Dublin-based startup who helps people find the best beauty and grooming professionals and book treatments at home.
         </p>
 
@@ -181,7 +184,7 @@
         <div class="tiny-desc">Leading provider of academic software in Brazil</div>
         <div>Jul 2017 – Nov 2018 • 1 yr 5 mos</div>
 
-        <p class="italic">
+        <p>
             Actuar is a company which focus on proving technology to gyms and web payment.
             <!-- As of August 2018, the company had approximately 2.000 throughout Brazil, more than 15.000 users from physic evaluation free webapp and thousands from TREI.NO app in Brazil and abroad. -->
             In 18 months I was able to:
@@ -198,10 +201,10 @@
     </div>
 
     <div class="pt-1">
-        <strong class="company-name">Internship Software Developer at Meta</strong>
+        <strong class="company-name">Internship Software Developer at MetaTecnologia</strong>
         <div>Feb 2017 – Jul 2017 • 6 mos</div>
 
-        <!-- <p class="italic">
+        <!-- <p>
             MetaTecnologia is a company with large experience in computerizing mobile phone shops.
             There I worked on the improvement of a product to control financial of mobile phone stores, and payment system integration to federal government.
             I was a Fullstack developer, I studied and handled a Fullstack setup.
@@ -226,7 +229,7 @@
             <li>Webapps Deployment and its CI/CD</li>
         </ul>
 
-        <p class="italic">
+        <p>
             Some projects I worked for Nussa Sistemas were:
             mobile app for package delivery,
             PWA for medical congresses, daily liturgy webapp for Archdioceses and a Social Network including real time chat.
@@ -235,41 +238,41 @@
         <p>Tech Stack:</p>
         <p>Angular 2+, Ionic 2+, React JS, React Native, Node JS + Express, Mongo DB, Firebase, CI/CD, Heroku, PHP and Wordpress.</p>
     </div> -->
+    
+    <style>
+        .company-name {
+            font-size: 1.2rem;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .tiny-desc {
+            font-size: 12px;
+            font-style: italic;
+        }
+        .italic {
+            font-style: italic;
+        }
+        /* ul.circle > li {
+            list-style-type: circle;
+        }
+        ul.decimal > li {
+            list-style-type: decimal;
+        }
+        ul.roman > li {
+            list-style-type: lower-roman;
+        }
+        ul.upper-roman > li {
+            list-style-type: upper-roman;
+        } */
+    
+        .mt-1 { margin-top: 0.5rem }
+        .mt-2 { margin-top: 1rem }
+        .mt-3 { margin-top: 1.5rem }
+    
+        .pt-1 { padding-top: 1rem }
+        li {word-wrap: break-word;}
+    </style>
 </div>
-
-<style>
-    .company-name {
-        font-size: 1.2rem;
-    }
-	.subtitle {
-		text-transform: uppercase;
-		text-decoration: underline;
-		font-weight: 600;
-	}
-	.tiny-desc {
-		font-size: 12px;
-		font-style: italic;
-    }
-    .italic {
-        font-style: italic;
-    }
-	/* ul.circle > li {
-		list-style-type: circle;
-	}
-	ul.decimal > li {
-		list-style-type: decimal;
-	}
-	ul.roman > li {
-		list-style-type: lower-roman;
-	}
-	ul.upper-roman > li {
-		list-style-type: upper-roman;
-    } */
-
-    .mt-1 { margin-top: 0.5rem }
-	.mt-2 { margin-top: 1rem }
-	.mt-3 { margin-top: 1.5rem }
-
-    .pt-1 { padding-top: 1rem }
-	li {word-wrap: break-word;}
-</style>

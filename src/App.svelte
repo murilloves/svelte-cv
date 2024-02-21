@@ -29,9 +29,9 @@
 
 	<Summary />
 
-	<Achievements />
-
 	<Career />
+
+	<Achievements />
 
 	<Education />
 
