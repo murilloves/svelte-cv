@@ -8,18 +8,17 @@
             <li>Outline interests and activities. Highlight interests that may add value to your application.</li>
             <li>Love to backpack travel, etc</li>
         </red> -->
-        <li>Help people to solve problems with code and great usability</li>
-        <li>Grow as a developer and bring life to great ideas</li>
-        <li>Know as many countries and cultures as possible</li>
+        <li>Help define and improve our internal standards for style, maintainability, and best practices for a high-scale web environment</li>
+        <li>Solve technical problems of high scope and complexity, with code and great reusability </li>
+        <li>Always grow as a software engineer and bring life to great ideas</li>
     </ul>
+    <style>
+        .subtitle {
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    
+        li {word-wrap: break-word;}
+    </style>
 </div>
-
-<style>
-	.subtitle {
-		text-transform: uppercase;
-		text-decoration: underline;
-		font-weight: 600;
-	}
-
-    li {word-wrap: break-word;}
-</style>

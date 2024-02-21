@@ -5,7 +5,7 @@ const personal = new Personal({
 	target: document.body,
 	props: {
 		name: 'Silva, Murillo',
-		address: 'S-4 Street - Bela Vista - Goiania',
+		address: 'Goiania - Brazil',
 		email: 'murillov.dev@gmail.com',
 		phone: '+55 62 983-196-600',
 		linkedin: {
