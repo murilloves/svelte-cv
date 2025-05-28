@@ -1,5 +1,6 @@
 <script>
-    const reveloStartDate = new Date('2021/12/20');
+    const reveloStartDate = new Date('2022/01/10');
+    const reveloEndDate = new Date('2025/04/15');
 
     const sevenappsStartDate = new Date('2020/12/28');
     const sevenappsEndDate = new Date('2021/11/02');
@@ -22,7 +23,7 @@
             - (12 * d1.getFullYear() + d1.getMonth());
     }
 
-    const reveloInMonths = monthDiff(reveloStartDate, today);
+    const reveloInMonths = monthDiff(reveloStartDate, reveloEndDate);
     const sevenappsInMonths = monthDiff(sevenappsStartDate, sevenappsEndDate);
     const clubienInMonths = monthDiff(clubienStartDate, clubienEndDate);
     const nectarInMonths = monthDiff(nectarStartDate, nectarEndDate);
@@ -35,9 +36,9 @@
     </h3>
 
     <div>
-        <strong class="company-name">Frontend Engineer at Revelo</strong>
-        <div class="tiny-desc">Developer Squad Supply Specialist</div>
-        <div>Dec 2021 – Present •
+        <strong class="company-name">Senior Frontend Engineer at Revelo</strong>
+        <div class="tiny-desc">Squad Supply Frontend Specialist</div>
+        <div>Dec 2021 – Apr 2025 •
         { reveloInMonths / 12 >= 1
             ? `${Math.floor(reveloInMonths/12)}
                 yrs${reveloInMonths % 12 !== 0 ? ', ' + reveloInMonths % 12 + ' mos' : ''}`
@@ -46,15 +47,19 @@
 
         <p>
             &emsp;
-            Revelo is a company based in the US and Brazil that allocates top-notch developers to
-            corporations that are willing to create their own web app or mobile app using the best
-            technologies available. Furthermore, developers are also responsible for understanding the
-            corporation's goals and providing the best service, based on their core business with a high
-            quality control of software.
+            Revelo is a company based in the US that allocates top-notch staff from Brazil and LATAM to
+            corporations that are willing to have the best software engineers from those countries.
+            
+            The developers are responsible for understanding the corporation's goals and providing
+            the best service, based on their core business with a high quality control of software.
         </p>
 
-        <p>Role:</p>
-        <p>
+        <p class="mb-1">
+            <strong>
+                Role:
+            </strong>
+        </p>
+        <p class="mt-1">
             &emsp;
             In my position as a Developer at Revelo, I've been a contractor for a single company,
             a Fintech-related whose goal is to provide information that educates users in making financial decisions.
@@ -63,11 +68,22 @@
 
         <ul class="topic">
             <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
+            <li>Spearheaded the creation of a robust style guide to align branding across the entire application, enhancing UI/UX coherence, reducing new feature development time by 50% for Fullstack developers after implementing the shared component library.</li>
+            <li>Built a scalable, reusable component library from the ground up using Atomic Design principles and based on Tailwind UI, cutting UI inconsistencies by 80% by enforcing standardized design tokens and components.</li>
+            <!-- <li>Implemented server-side rendering (SSR) with Next.js, significantly improving SEO performance and initial load times.</li> -->
+            <li>Developed and maintained admin interfaces using React, TypeScript, and GraphQL, streamlining internal operations for the client’s financial platform, reducing support requests from analysts by 30% to 40% after launching the custom dashboard.</li>
+            <li>Wrote automated tests (unit and integration) using tools like Jest and React Testing Library, resulting in improved code quality and reduced regression issues, also reducing the QA time spent in catching recurrent bugs.</li>
+            <li>Reduced build warnings and deprecated APIs by upgrading to the latest versions of React and related packages, also wipping out useEffect, useMemo and other React hooks commom mistakes from the codebase.</li>
+            <!-- <li>Collaborated closely with product and design teams, delivering UI components and views that matched high-fidelity Figma prototypes.</li> -->
+
+<!--             
+            
             <li>
                 Help building out a style guide and core set of React components and templates.
             </li>
             <li>
-                Explore technologies such as React and Next JS to support server-side rendering for speed and SEO.
+                Use of Highcharts to build tailored Dashboards and data analysis for companies, also real-time data visualization
+                through the use of Line, Area, Column Pie charts and other.
             </li>
             <li>
                 Design and build admin interfaces so our business analysts can seamlessly update website content and easily get analytics reports to track performance.
@@ -77,14 +93,18 @@
             </li>
             <li>
                 Update third part packages to it's most modern and seccure versions.
-            </li>
+            </li> -->
         </ul>
 
-        <p>Tech Stack:</p>
-        <p>
-            Git, ReactJS, Typescript, NextJS, ES7, Redux, React Hooks, Context API, Atomic Design, Styled Components,
-            Chakra UI, Ruby on Rails, GraphQL, Webpack, Vite, HTML5, SCSS, Babel.
+        <p class="mb-1">
+            <strong>
+                Tech Stack:
+            </strong>
         </p>
+        <small>
+            Git, ReactJS, Highcharts, Typescript, Unit + E2E testing, NextJS, Redux, React Hooks, Context API, Zustand, Atomic Design, Vite, Styled Components,
+            Tailwind, React Bootstrap, Ruby on Rails, GraphQL, Webpack, HTML5, SCSS, Babel.
+        </small>
 
     </div>
     <div class="mt-3">
@@ -97,7 +117,11 @@
             : `${sevenappsInMonths % 12} mos` }
         </div>
 
-        <p>Role:</p>
+        <p>
+            <strong>
+                Role:
+            </strong>
+        </p>
         <p>
             &emsp; As a Developer at SevenApps, I worked on three projects.
             The most significant company was FanHero. There I helped with their newest version for the
@@ -105,17 +129,26 @@
             thinking about solutions for problems like requests, performance, security among other issues.
         </p>
 
-        <p>Projects:
-            FanHero Portal, Webapp;
-            Mindlab: MindZup - Gamificated application for students;
-            BestBarbers: Barber Management Webapp
-        </p>
-
-        <p>Tech Stack & Concepts:</p>
         <p>
-            Git, ReactJS, NextJS, React Native, ES7, Redux, React Hooks, Context API, Atomic Design, Styled Components, Chakra UI,
-            Rest, GraphQL, Gulp, Webpack, Babel, Docker, Google Cloud.
+            <strong>
+                Projects:
+            </strong>
         </p>
+        <ul class="topic">
+            <li>FanHero Portal, Webapp</li>
+            <li>Mindlab: MindZup - Gamificated application for students</li>
+            <li>BestBarbers: Barber Management SaaS</li>
+        </ul>
+
+        <p>
+            <strong>
+                Tech Stack:
+            </strong>
+        </p>
+        <small>
+            Git, ReactJS, NodeJS, NextJS, React Native, ES7, TDD, Clean Code, Redux, React Hooks, Context API, Atomic Design, Styled Components, Chakra UI,
+            Rest, GraphQL, Gulp, Webpack, Babel, Docker, Google Cloud.
+        </small>
 
     </div>
     <div class="mt-3">
@@ -133,7 +166,11 @@
             Integrated with Google, RD Station and a huge set of tools and enterprises, it helps companies boosts their sales process and strategy.
         </p>
 
-        <p>Responsibilities:</p>
+        <p>
+            <strong>
+                Role:
+            </strong>
+        </p>
         <ul class="topic">
             <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
             <li>Refactor of the Webapp with the new UX/UI set</li>
@@ -145,8 +182,14 @@
             <li>Improvements on company's Backoffice app</li>
         </ul>
 
-        <p>Tech Stack:</p>
-        <p>AngularJS, Karma, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.</p>
+        <p>
+            <strong>
+                Tech Stack:
+            </strong>
+        </p>
+        <small>
+            AngularJS, Azure, NodeJS, Karma, TDD, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.
+        </small>
 
     </div>
     <!-- <div class="pt-1">
@@ -196,8 +239,14 @@
             <li>Give maintenance on a training app. Made responsive blogs and webpages for the company, also performing SEO</li>
         </ul>
 
-        <p>Tech Stack:</p>
-        <p>Angular 2+, Ionic 2, Typescript, Jest, Angular JS, Wordpress, Scrum, HTML5, ES6, CSS3, Sass, SVG, Git.</p>
+        <p>
+            <strong>
+                Tech Stack:
+            </strong>
+        </p>
+        <small>
+            Angular 2+, Ionic 2, Azure, Typescript, Jest, Angular JS, Wordpress, Scrum, HTML5, ES6, CSS3, Sass, SVG, Git.
+        </small>
     </div>
 
     <div class="pt-1">
@@ -267,11 +316,22 @@
         ul.upper-roman > li {
             list-style-type: upper-roman;
         } */
-    
+   
+        .topic { font-size: 0.9rem }
+        .topic li {
+            margin: 0.4rem 0
+        }
+
+        .mt-0 { margin-top: 0 }
         .mt-1 { margin-top: 0.5rem }
         .mt-2 { margin-top: 1rem }
         .mt-3 { margin-top: 1.5rem }
-    
+
+        .mb-0 { margin-bottom: 0 }
+        .mb-1 { margin-bottom: 0.5rem }
+        .mb-2 { margin-bottom: 1rem }
+        .mb-3 { margin-bottom: 1.5rem }
+
         .pt-1 { padding-top: 1rem }
         li {word-wrap: break-word;}
     </style>
