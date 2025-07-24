@@ -7,10 +7,7 @@
 </script>
 
 <div class="personal-container">
-    <div>
-        
-    </div>
-    <h1>
+    <h1 style="margin: 0">
         {name}
     </h1>
     <div>
@@ -27,10 +24,7 @@
 
     <style>
         .personal-container {
-            margin-right: 1.5cm;
-            margin-bottom: 1.5cm;
-            margin-top: -1cm;
-            margin-left: 1.5cm;
+            margin-bottom: 0.5cm;
             text-align: right;
         }
     

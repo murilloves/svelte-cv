@@ -1,4 +1,76 @@
 <script>
+  const allTimeCareerJobs = [
+    {
+      id: 10,
+      title: "Revelo - Senior Frontend Engineer @RiskScout",
+      companyDesc: "Nearshore Squad Specialist",
+      timelineLabel: "Jun 2022 - Jul 2025 • 3 yrs 1 mos",
+      startDate: new Date("2022/01/10"),
+      endDate: new Date("2022/01/10"),
+      upperDesc: `
+        Revelo is a US‑based platform that connects corporations with elite Latin American software engineers who understand each client’s objectives and deliver high‑quality, business‑driven software solutions.
+     `,
+      role: `
+        As a Senior Software Engineer at Revelo, I worked for a prominent Fintech company,
+        where I've contributed to the design and development of their web platform. My key achievements were:
+      `,
+      keyAchievements: [
+        `Building a robust design system by 60+ components, including extensive forms, authoring a comprehensive style guide, and reusable React/Next.js templates that cut new UI feature development time by 35% and reduced visual inconsistencies by 25%.`,
+        `Delivered personalized, intuitive admin dashboards, allowing business analysts to update content and generate detailed reports 40% faster while slashing manual reporting errors by 80%. Designed and built intuitive interfaces to enable business analysts to update content and access detailed reports easily.`,
+        `Built and maintained an end-to-end testing suite using Jest and Cypress, increasing test coverage from 60% to 90% and cutting post-release bug rates by 30% overall.`,
+        `Led dependency upgrades across 30+ npm packages, eliminating 15 high-severity security vulnerabilities and improving overall bundle performance by 10%, contributing to a more secure and maintainable codebase.`,
+        `Developed a comprehensive style guide and a core set of reusable React components and templates to ensure consistency and scalability across the platform.`,
+      ],
+      tech: `Git, ReactJS, Highcharts, Typescript, Unit + E2E testing, NextJS,
+        Redux, React Hooks, Context API, Zustand,
+        Atomic Design, Vite, Styled Components,
+        Tailwind, React Bootstrap, Ruby on Rails, GraphQL, Webpack, HTML5, SCSS, Babel.`,
+    },
+    {
+      id: 9,
+      title: "Avenue Code - Frontend Software Engineer @GAP",
+      companyDesc: "",
+      timelineLabel: "Jan 2022 - Jun 2022 • 6 mos",
+      startDate: "",
+      endDate: "",
+      upperDesc: ``,
+      role: ``,
+      keyAchievements: [
+        `Accelerated MVP delivery by 40%: Architected and launched the core back-office platform for revenue sellers from scratch, complete with user authentication, role-based access controls, and key admin modules, within 6 weeks (versus the typical 10-week timeline), enabling the operations team to onboard 150+ products and process requests twice as fast.`,
+        `Boosted frontend performance by 56%: Leveraged Next.js SSR and static generation to reduce average dashboard load times from 1.6 s to 700 ms and lifted Lighthouse performance scores from 60% to 95%, resulting in a smoother UX and lower bounce rates.`,
+        `Streamlined data workflows with Redux-Saga: Designed a scalable saga orchestration layer that cut redundant API calls by 30 % and dropped front-end data-update errors by 35 %, improving overall system reliability and reducing support tickets.`
+      ],
+      tech: `Next.js, React.js, Tailwind CSS, Redux, REST, Jest, Typescript`,
+    },
+    {
+      id: 8,
+      title: "Avenue Code - Frontend Software Engineer @BackCountry",
+      companyDesc: "",
+      timelineLabel: "Jul 2021 - Dec 2021 • 6 mos",
+      startDate: "",
+      endDate: "",
+      upperDesc: ``,
+      role: ``,
+      keyAchievements: [
+        `Built a fault-tolerant async layer with custom fetch wrappers and React Error Boundaries to strongly handle front-backend integration failures, preventing 90% of shopping-cart crashes and cutting cart abandonment by 30%.`,
+        `Supercharged cart UX with Redux + localStorage caching and React-hook refactors, reducing redundant network calls by 60%, boosting cart state restoration success to 98%, eradicating useEffect deadlocks and useMemo side-effects, improving UI responsiveness by 35%, and overall webapp lighthouse score up to 93% (previously 68%).`,
+        `Guaranteed 100% Jest unit & snapshot coverage, lifting CI build pass rates to 100% and slashing post-release defects by 80% through comprehensive tests across all bike-division UI modules.`
+      ],
+      tech: `NodeJS, GraphQL, React.js, Redux, Jest, React Hooks`,
+    },
+    // {
+    //   id: 0,
+    //   title: "",
+    //   companyDesc: "",
+    //   timelineLabel: "Dec 2021 - Apr 2025 •",
+    //   startDate: "",
+    //   endDate: "",
+    //   upperDesc: ``,
+    //   role: ``,
+    //   keyAchievements: [],
+    //   tech: ``,
+    // },
+  ]
     const reveloStartDate = new Date('2022/01/10');
     const reveloEndDate = new Date('2025/04/15');
 
@@ -8,26 +80,25 @@
     const clubienEndDate = new Date('2020/12/10');
     const nectarStartDate = new Date('2018/11/10');
     const nectarEndDate = new Date('2020/12/31');
-    // const nussaStartDate = new Date('2015/3/15');
-    // const nussaEndDate = new Date('2017/6/10');
     const today = new Date();
 
     const monthDiff = (d1, d2) => {
-        if (d1.getTime() > d2.getTime()) {
-            let buff = d2;
-            d2 = d1;
-            d1 = buff;
-        }
-        return 1
-            + (12 * d2.getFullYear() + d2.getMonth())
-            - (12 * d1.getFullYear() + d1.getMonth());
+      if (d1.getTime() > d2.getTime()) {
+        let buff = d2;
+        d2 = d1;
+        d1 = buff;
+      }
+      return 1
+        + (12 * d2.getFullYear() + d2.getMonth())
+        - (12 * d1.getFullYear() + d1.getMonth());
     }
 
     const reveloInMonths = monthDiff(reveloStartDate, reveloEndDate);
-    const sevenappsInMonths = monthDiff(sevenappsStartDate, sevenappsEndDate);
-    const clubienInMonths = monthDiff(clubienStartDate, clubienEndDate);
-    const nectarInMonths = monthDiff(nectarStartDate, nectarEndDate);
-    // const nussaInMonths = monthDiff(nussaStartDate, nussaEndDate);
+    const reveloDiff = reveloInMonths / 12 >= 1
+          ? `${Math.floor(reveloInMonths/12)} years
+          ${reveloInMonths % 12 !== 0 ? ' ' + reveloInMonths % 12 + ' months' : ''}`
+          : `${reveloInMonths % 12} months`
+
 </script>
 
 <div class="section-summary">
@@ -35,92 +106,58 @@
         CAREER
     </h3>
 
-    <div>
-        <strong class="company-name">Senior Frontend Engineer at Revelo</strong>
-        <div class="tiny-desc">Squad Supply Frontend Specialist</div>
-        <div>Dec 2021 – Apr 2025 •
-        { reveloInMonths / 12 >= 1
-            ? `${Math.floor(reveloInMonths/12)}
-                yrs${reveloInMonths % 12 !== 0 ? ', ' + reveloInMonths % 12 + ' mos' : ''}`
-            : `${reveloInMonths % 12} mos` }
-        </div>
+    {#each allTimeCareerJobs as careerJob}
+      <div class="mt-3">
+        <strong class="company-name">{careerJob.title}</strong>
+        <div class="tiny-desc">{careerJob.companyDesc}</div>
+        <div>{careerJob.timelineLabel}</div>
 
         <p>
-            &emsp;
-            Revelo is a company based in the US that allocates top-notch staff from Brazil and LATAM to
-            corporations that are willing to have the best software engineers from those countries.
-            
-            The developers are responsible for understanding the corporation's goals and providing
-            the best service, based on their core business with a high quality control of software.
+          {careerJob.upperDesc}
         </p>
 
-        <p class="mb-1">
+        {#if careerJob.role}
+          <p class="mb-1">
             <strong>
-                Role:
+              Role:
             </strong>
-        </p>
-        <p class="mt-1">
-            &emsp;
-            In my position as a Developer at Revelo, I've been a contractor for a single company,
-            a Fintech-related whose goal is to provide information that educates users in making financial decisions.
-            My assignments are:
-        </p>
+          </p>
+          <p class="mt-1">
+            {careerJob.role}
+          </p>
+        {/if}
 
         <ul class="topic">
-            <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
-            <li>Spearheaded the creation of a robust style guide to align branding across the entire application, enhancing UI/UX coherence, reducing new feature development time by 50% for Fullstack developers after implementing the shared component library.</li>
-            <li>Built a scalable, reusable component library from the ground up using Atomic Design principles and based on Tailwind UI, cutting UI inconsistencies by 80% by enforcing standardized design tokens and components.</li>
-            <!-- <li>Implemented server-side rendering (SSR) with Next.js, significantly improving SEO performance and initial load times.</li> -->
-            <li>Developed and maintained admin interfaces using React, TypeScript, and GraphQL, streamlining internal operations for the client’s financial platform, reducing support requests from analysts by 30% to 40% after launching the custom dashboard.</li>
-            <li>Wrote automated tests (unit and integration) using tools like Jest and React Testing Library, resulting in improved code quality and reduced regression issues, also reducing the QA time spent in catching recurrent bugs.</li>
-            <li>Reduced build warnings and deprecated APIs by upgrading to the latest versions of React and related packages, also wipping out useEffect, useMemo and other React hooks commom mistakes from the codebase.</li>
-            <!-- <li>Collaborated closely with product and design teams, delivering UI components and views that matched high-fidelity Figma prototypes.</li> -->
-
-<!--             
-            
-            <li>
-                Help building out a style guide and core set of React components and templates.
-            </li>
-            <li>
-                Use of Highcharts to build tailored Dashboards and data analysis for companies, also real-time data visualization
-                through the use of Line, Area, Column Pie charts and other.
-            </li>
-            <li>
-                Design and build admin interfaces so our business analysts can seamlessly update website content and easily get analytics reports to track performance.
-            </li>
-            <li>
-                Build tests using tools like Jest and Cypress to ensure the components are reliable enough.
-            </li>
-            <li>
-                Update third part packages to it's most modern and seccure versions.
-            </li> -->
+          {#each careerJob.keyAchievements as keyAchievement}
+            {#if careerJob.role}
+              <li>{keyAchievement}</li>
+            {/if}
+            {#if !careerJob.role}
+              <p>{keyAchievement}</p>
+            {/if}
+          {/each}
         </ul>
 
         <p class="mb-1">
-            <strong>
-                Tech Stack:
-            </strong>
+          <strong>
+            Tech Stack:
+          </strong>
         </p>
         <small>
-            Git, ReactJS, Highcharts, Typescript, Unit + E2E testing, NextJS, Redux, React Hooks, Context API, Zustand, Atomic Design, Vite, Styled Components,
-            Tailwind, React Bootstrap, Ruby on Rails, GraphQL, Webpack, HTML5, SCSS, Babel.
+          {careerJob.tech}
         </small>
+      </div>
+    {/each}
 
-    </div>
     <div class="mt-3">
-        <strong class="company-name">Senior Frontend Developer at SevenApps LLC</strong>
+        <strong class="company-name">Senior Frontend Developer @SevenApps LLC</strong>
         <div class="tiny-desc">Developer Squad Supply Specialist</div>
-        <div>Dec 2020 – Nov 2021 •
-        { sevenappsInMonths / 12 >= 1
-            ? `${Math.floor(sevenappsInMonths/12)}
-                yr${sevenappsInMonths % 12 !== 0 ? ', ' + sevenappsInMonths % 12 + ' mos' : ''}`
-            : `${sevenappsInMonths % 12} mos` }
-        </div>
+        <div>Aug 2020 - Jul 2021 • 1 yr</div>
 
         <p>
-            <strong>
-                Role:
-            </strong>
+          <strong>
+            Role:
+          </strong>
         </p>
         <p>
             &emsp; As a Developer at SevenApps, I worked on three projects.
@@ -130,14 +167,14 @@
         </p>
 
         <p>
-            <strong>
-                Projects:
-            </strong>
+          <strong>
+            Key Achievements:
+          </strong>
         </p>
         <ul class="topic">
-            <li>FanHero Portal, Webapp</li>
-            <li>Mindlab: MindZup - Gamificated application for students</li>
-            <li>BestBarbers: Barber Management SaaS</li>
+          <li>Developement of the newest version of the webapp for clients from Vue to React, Next JS, and TypeScript, handling millions of simultaneous connections, improving performance by 70%, and also security.</li>
+          <li>Implemented unit tests using Jest, ensuring code quality and reducing regression issues, achieving up to 95% code coverage.</li>
+          <li>Implemented Design Patterns such as Singleton and Factory in Fanhero projects, improving code maintainability and scalability, reducing the implementation of new features by 30%.</li>
         </ul>
 
         <p>
@@ -152,92 +189,61 @@
 
     </div>
     <div class="mt-3">
-        <strong class="company-name">Frontend Developer at Nectar CRM</strong>
+        <strong class="company-name">Frontend Developer @ Nectar CRM</strong>
         <div class="tiny-desc">Biggest CRM company in Brazilian's midwest</div>
-        <div>Nov 2018 – Dec 2020 •
-        { nectarInMonths / 12 >= 1
-            ? `${Math.floor(nectarInMonths/12)}
-                yrs${nectarInMonths % 12 !== 0 ? ', ' + nectarInMonths % 12 + ' mos' : ''}`
-            : `${nectarInMonths % 12} mos` }
-        </div>
+        <div>Jun 2018 - Jul 2020 • 2 yrs</div>
 
         <p>
-            Nectar is a regional CRM company which provides solutions for companies to manage relationships with their customers, selling procedures, Business Intelligence and a lot more.
-            Integrated with Google, RD Station and a huge set of tools and enterprises, it helps companies boosts their sales process and strategy.
+          Nectar is a regional CRM provider offering end‑to‑end customer relationship management,
+          sales automation, and business‑intelligence solutions—integrated with Google, RD Station,
+          and a broad ecosystem of enterprise tools—to help companies accelerate their sales processes and sharpen strategic insights.
         </p>
 
         <p>
-            <strong>
-                Role:
-            </strong>
+          In my role, I refactored the main web app with a fresh UX/UI, developed key new features,
+          and authored tailored documentation to onboard new developers.
+          I also contributed to the React Native mobile app, tackled bug fixes in the core CRM platform,
+          and enhanced the company’s back‑office application.
         </p>
-        <ul class="topic">
-            <!-- <li>Highlight responsibilities and key achievements/deliverables.</li> -->
-            <li>Refactor of the Webapp with the new UX/UI set</li>
-            <li>Development of new functionalities to the main software</li>
-            <li>Create personalized documentation to help new hired developers to understand the applications</li>
-            <li>Helped developing the new Mobile Application using React Native</li>
-
-            <li>Development of Nectar CRM's main web app and bug solving issues</li>
-            <li>Improvements on company's Backoffice app</li>
-        </ul>
 
         <p>
-            <strong>
-                Tech Stack:
-            </strong>
+          <strong>
+            Tech Stack:
+          </strong>
         </p>
         <small>
-            AngularJS, Azure, NodeJS, Karma, TDD, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.
+          AngularJS, Azure, NodeJS, Karma, TDD, ReactJS, React Native, Redux, Vue 2, HTML5, ES7, CSS3, Sass, Rest, Gulp, JSP, Git, Java 8.
         </small>
-
     </div>
+
     <!-- <div class="pt-1">
-        <strong class="company-name">Mobile Developer and Web Developer at Clubien (Contractor)</strong>
+        <strong class="company-name">Mobile Developer and Web Developer @ Clubien (Freelance)</strong>
         <div class="tiny-desc">Wellness Delivery startup in Ireland</div>
-        <div>Jul 2020 – Dec 2020 •
-        { clubienInMonths / 12 >= 1
-            ? `${Math.floor(clubienInMonths/12)} yrs
-               ${clubienInMonths % 12 !== 0 ? ', ' + clubienInMonths % 12 + ' mos' : ''}`
-            : `${clubienInMonths % 12} mos` }
-        </div>
+        <div>Jul 2020 - Dec 2020 • 6 mos</div>
 
         <p>
-            Clubien was a Dublin-based startup who helps people find the best beauty and grooming professionals and book treatments at home.
+          At Clubien, a Dublin‑based startup connecting users with top beauty and grooming professionals
+          for at‑home treatments, I led mobile development—owning the app’s UI/UX design and ensuring
+          its performance and reliability—and, as a web developer, enhanced the website by building
+          customer and professional landing pages and co‑developing the admin interface with RESTful API integration.
         </p>
-
-        <p>Main Mobile Developer:</p>
-        <ul class="topic">
-            <li>Lead of Clubien's Mobile APP development</li>
-            <li>UI and UX primary responsible</li>
-            <li>Enforce a reliable app performance and integrity</li>
-        </ul>
-
-        <p>Web Developer:</p>
-        <ul class="topic">
-            <li>Improvements at Clubien's website and creation of the landing pages for customers and professionals</li>
-            <li>Co-development of Admin's interface, Rest integration with company API</li>
-        </ul>
 
         <p>Tech Stack:</p>
         <p>React Native, NextJS, React, Redux, Jest, Rest, Git, Tailwind CSS.</p>
     </div> -->
+
     <div class="pt-1">
-        <strong class="company-name">Frontend Developer at Actuar</strong>
+        <strong class="company-name">Frontend Developer @ Actuar</strong>
         <div class="tiny-desc">Leading provider of academic software in Brazil</div>
-        <div>Jul 2017 – Nov 2018 • 1 yr 5 mos</div>
+        <div>Jan 2017 - Jun 2018 • 1 yr 6 mos</div>
 
         <p>
-            Actuar is a company which focus on proving technology to gyms and web payment.
-            <!-- As of August 2018, the company had approximately 2.000 throughout Brazil, more than 15.000 users from physic evaluation free webapp and thousands from TREI.NO app in Brazil and abroad. -->
-            In 18 months I was able to:
+          At Actuar, a technology provider for gyms and web payments,
+          I spent 18 months leading a SCRUM-based development team to build an ERP tailored for gym and CrossFit box management;
+          I estimated effort for new feature requests and oversaw all software‑engineering artifacts—from requirements
+          through design, implementation, and testing—and I also maintained the company’s training app,
+          created responsive blogs and web pages, and optimized them for SEO.
         </p>
-
-        <ul class="topic">
-            <li>Lead a team of developers applying SCRUM and working on the development of an ERP focused on gyms management and crossfit boxes</li>
-            <li>Estimate the effort for new demands and performed verification of the artifacts of software engineering such as requirements, design, implementation and testing</li>
-            <li>Give maintenance on a training app. Made responsive blogs and webpages for the company, also performing SEO</li>
-        </ul>
 
         <p>
             <strong>
@@ -249,9 +255,9 @@
         </small>
     </div>
 
-    <div class="pt-1">
+    <!-- <div class="pt-1">
         <strong class="company-name">Internship Software Developer at MetaTecnologia</strong>
-        <div>Feb 2017 – Jul 2017 • 6 mos</div>
+        <div>Feb 2017 - Jul 2017 • 6 mos</div> -->
 
         <!-- <p>
             MetaTecnologia is a company with large experience in computerizing mobile phone shops.
@@ -259,33 +265,8 @@
             I was a Fullstack developer, I studied and handled a Fullstack setup.
         </p> -->
 
-        <p>Tech Stack:</p>
+        <!-- <p>Tech Stack:</p>
         <p> JAVA, MongoDB, JSP, HTML and CSS with Bootstrap.</p>
-    </div>
-
-    <!-- <div class="pt-1">
-        <strong class="company-name">Developer at Nussa Sistemas (Contractor)</strong>
-        <div>
-            Mar { nussaStartDate.getFullYear() }
-            – Jun { nussaEndDate.getFullYear() } • { Math.floor(nussaInMonths / 12) } yrs, { nussaInMonths % 12 } mos
-        </div>
-        
-        <p>Description:</p>
-        <ul class="topic">
-            <li>Freelancer web developer, mobile apps, PWAs and websites</li>
-            <li>Experience in data consumption and optimization</li>
-            <li>Fullstack developer, responsible for handling entire Webapps from Backend to Frontend</li>
-            <li>Webapps Deployment and its CI/CD</li>
-        </ul>
-
-        <p>
-            Some projects I worked for Nussa Sistemas were:
-            mobile app for package delivery,
-            PWA for medical congresses, daily liturgy webapp for Archdioceses and a Social Network including real time chat.
-        </p>
-        
-        <p>Tech Stack:</p>
-        <p>Angular 2+, Ionic 2+, React JS, React Native, Node JS + Express, Mongo DB, Firebase, CI/CD, Heroku, PHP and Wordpress.</p>
     </div> -->
     
     <style>
@@ -304,18 +285,6 @@
         .italic {
             font-style: italic;
         }
-        /* ul.circle > li {
-            list-style-type: circle;
-        }
-        ul.decimal > li {
-            list-style-type: decimal;
-        }
-        ul.roman > li {
-            list-style-type: lower-roman;
-        }
-        ul.upper-roman > li {
-            list-style-type: upper-roman;
-        } */
    
         .topic { font-size: 0.9rem }
         .topic li {

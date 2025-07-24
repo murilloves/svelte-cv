@@ -5,39 +5,37 @@
 	export let phone;
 	export let linkedin;
 
-	import Summary from './Summary.svelte';
-	import Achievements from './Achievements.svelte';
+	// import Achievements from './Achievements.svelte';
+	// import Additional from './Additional.svelte';
+	// import Interests from './Interests.svelte';
 	import Career from './Career.svelte';
 	import Education from './Education.svelte';
-	import Additional from './Additional.svelte';
-	import Interests from './Interests.svelte';
+	import Summary from './Summary.svelte';
 
-	import common from './styles/common.svelte';
+	// import common from './styles/common.svelte';
 
 </script>
 
-<style>
-	.div-container {
-		margin: 1.5cm;
-		margin-top: -0.8cm;
-		margin-left: 1.5cm;
-	}
-</style>
 
 <div class="div-container">
+	<style>
+		.div-container {
+			max-width: 1280px;
+		}
+	</style>
 	<!-- <Personal /> -->
 
 	<Summary />
 
 	<Career />
 
-	<Achievements />
+	<!-- <Achievements /> -->
 
 	<Education />
 
 	<!-- <Additional /> -->
 	
-	<Interests />
+	<!-- <Interests /> -->
 
 	<div>
 		<!-- <strong style="font-style: italic; color: #777">

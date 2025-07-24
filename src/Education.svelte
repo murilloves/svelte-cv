@@ -1,10 +1,10 @@
 <script>
 	let courses = [
-		{ name: 'React Native with NodeJS and Firebase', hours: 28 },
-		{ name: 'MERN Stack, Frontend to Backend', hours: 12 },
-		{ name: 'Agile management with SCRUM', hours: 10 },
-		{ name: 'Complete Javascript 2018 - Fundamentals to Master', hours: 35 },
-		{ name: 'Web Design for Web Developers: UI/UX for Websites and Mobile', hours: 8 }
+		{ name: 'React Native with NodeJS and Firebase • ' },
+		{ name: 'MERN Stack, Frontend to Backend • ' },
+		{ name: 'Agile management with SCRUM • ' },
+		{ name: 'Complete Javascript + Typescript - Fundamentals to Master • ' },
+		{ name: 'Web Design for Web Developers: UI/UX for Websites and Mobile' }
 	];
 </script>
 
@@ -48,11 +48,11 @@
     </div> -->
 
     <h4>
-        Certificates
+        Courses / Certificates
     </h4>
 	<ul class="topic font-medium">
 		{#each courses as course, i}
-			{course.name} <medium>({course.hours}h)</medium>;<br />
+			{course.name}
 		{/each}
 	</ul>
 </div>
